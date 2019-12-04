@@ -1,0 +1,510 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.base {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hijo1 {
+  width: 35vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #e8eaf6;
+}
+.titu {
+  text-align: center;
+  font-family: "Merienda", cursive;
+  color: #1a237e;
+  font-weight: bold;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  line-height: 45px;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  line-height: 20px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  font-family: "Merienda", cursive;
+  font-size: 2rem;
+  color: #fff;
+  background: #1a237e;
+  -webkit-box-shadow: 14px 10px 31px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 14px 10px 31px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 14px 10px 31px 3px rgba(0, 0, 0, 0.35);
+}
+.price > span > span {
+  display: block;
+  margin-bottom: -0.8rem;
+}
+.peque {
+  font-size: 1.3rem;
+}
+.hijo2 {
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #1a237e;
+}
+.hijo2_1 {
+  padding: 1rem;
+  width: 40vw;
+  height: 50vh;
+  border-radius: 0.5rem;
+  background: #9fa8da;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 14px 10px 31px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 14px 10px 31px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 14px 10px 31px 3px rgba(0, 0, 0, 0.35);
+}
+h1 {
+  text-align: center;
+  font-family: "Merienda", cursive;
+  color: #fff;
+  font-weight: bold;
+  font-size: 4rem;
+  padding-bottom: 4rem;
+}
+.pe {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  background: cornsilk;
+  border-radius: 10px;
+  color: #1a237e;
+}
+.tab-content {
+  padding: 1rem;
+  background: #f5f5f5;
+}
+.tab-pane {
+  font-family: "Exo 2", sans-serif;
+  font-size: 1.2rem;
+  height: 40vh;
+  color: #212121;
+}
+.nav-item {
+  font-family: "Exo 2", sans-serif;
+  color: darkblue;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#compra {
+  margin-top: 3rem;
+  width: 200px;
+  font-size: 2rem;
+  font-family: "Exo 2", sans-serif;
+  font-weight: bold;
+  color: #e8eaf6;
+  background: #1a237e;
+}
+.cc {
+  background: #e8eaf6;
+}
+.table {
+  text-align: center;
+  background: #b2dfdb;
+}
+thead {
+  background: #80cbc4;
+}
+iframe {
+  width: 100%;
+}
+.mob_h1 {
+  display: none;
+}
+.pe2 {
+  display: none;
+}
+#compra2 {
+  display: none;
+}
+/* adaptacion a los celulares y tablets  */
+
+@media (max-width: 1199.98px) {
+  .hijo1 > img {
+    width: 80%;
+  }
+  .titu {
+    font-size: 2.5rem;
+  }
+  .price {
+    font-size: 1.8rem;
+  }
+  .peque {
+    font-size: 1.25rem;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Merienda", cursive;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3.2rem;
+    padding-bottom: 4rem;
+  }
+  .hijo2_1 {
+    width: 55vw;
+  }
+
+  .pe {
+    font-size: 1.2rem;
+  }
+  .tab-pane {
+    font-size: 1rem;
+    height: 40vh;
+    color: #212121;
+  }
+  .nav-item {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .price {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 768px) {
+  .base {
+    flex-direction: column;
+  }
+
+  .hijo1 {
+    width: 100vw;
+    height: 25vh;
+    flex-direction: row;
+  }
+  .hijo1 > img {
+    width: auto;
+    height: 25vh;
+  }
+  .titu {
+    padding-bottom: 0;
+    margin-right: 3rem;
+    font-size: 2rem;
+  }
+  .price {
+    line-height: 20px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    font-family: "Merienda", cursive;
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 3rem;
+  }
+  .hijo2 {
+    width: 100vw;
+    height: 75vh;
+  }
+  .hijo2_1 {
+    width: 90vw;
+    height: 45vh;
+  }
+  h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .pe {
+    font-size: 1.2rem;
+  }
+  .tab-pane {
+    font-size: 1.2rem;
+    height: 35vh;
+    color: #212121;
+  }
+  .nav-item {
+    font-size: 1.2rem;
+  }
+  #compra {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 575.98px) {
+  .price > span > span {
+    display: block;
+    margin-bottom: -1rem;
+  }
+  .hijo1 > img {
+    height: 20vh;
+  }
+  .titu {
+    margin-right: 1rem;
+    font-size: 1.5rem;
+  }
+  .price {
+    width: 120px;
+    height: 120px;
+    line-height: 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1.5rem;
+  }
+  .hijo2 {
+    width: 100vw;
+    height: 75vh;
+  }
+  .hijo2_1 {
+    width: 90vw;
+    height: 45vh;
+  }
+  h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .pe {
+    font-size: 1.2rem;
+  }
+  .tab-pane {
+    font-size: 1.2rem;
+    height: 35vh;
+    color: #212121;
+  }
+  .nav-item {
+    font-size: 1.2rem;
+  }
+  #compra {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 414px) {
+  .pe2 {
+    margin: 0.5rem;
+    display: block;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    background: cornsilk;
+    border-radius: 10px;
+    color: #1a237e;
+  }
+  .no {
+    display: none;
+  }
+  .nav-link {
+    padding: 0.4rem;
+  }
+  .hijo1 > img {
+    display: none;
+  }
+  .mob_h1 {
+    display: block;
+    display: flex;
+    width: 100vw;
+    height: 25vh;
+  }
+  .m1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  .m1 > img {
+    width: 80%;
+  }
+  .m2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+  }
+  .m2_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+  }
+  .m2_1 > p {
+    text-align: center;
+    font-family: "Merienda", cursive;
+    color: #1a237e;
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .m2_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Merienda", cursive;
+    width: 100%;
+    height: 30%;
+    border-radius: 1rem;
+    background: #1a237e;
+    text-align: right;
+    line-height: 1rem;
+    color: #fff;
+  }
+  .m2_2 > p {
+    margin-top: 1.3rem;
+    width: auto;
+    height: 80%;
+  }
+  .m2_2 > p > span {
+    font-size: 1.5rem;
+  }
+  .titu {
+    display: none;
+  }
+  .price {
+    display: none;
+  }
+  .hijo2 {
+    width: 100vw;
+    height: 75vh;
+  }
+  .hijo2_1 {
+    width: 90vw;
+    height: 45vh;
+    margin-bottom: 10vh;
+  }
+  h1 {
+    display: none;
+  }
+  .pe {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .tab-pane {
+    line-height: 1.1rem;
+    font-size: 0.85rem;
+    height: 30vh;
+  }
+  .blockquote {
+    line-height: 1.1rem;
+    font-size: 0.85rem;
+  }
+  .nav-item {
+    font-size: 0.7rem;
+  }
+  #compra {
+    display: none;
+  }
+  #compra2 {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100px;
+    color: #fff;
+  }
+}
+@media (max-width: 320px) {
+  .nav-link {
+    padding: 0.2rem;
+  }
+  .hijo1 > img {
+    display: none;
+  }
+  .mob_h1 {
+    display: block;
+    display: flex;
+    width: 100vw;
+    height: 25vh;
+  }
+  .m1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+  }
+  .m1 > img {
+    width: 80%;
+  }
+  .m2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+  }
+  .m2_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+  }
+  .m2_1 > p {
+  }
+  .m2_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Merienda", cursive;
+    width: 100%;
+    height: 30%;
+    border-radius: 1rem;
+    background: #1a237e;
+    text-align: center;
+    line-height: 1rem;
+    color: #fff;
+  }
+  .m2_2 > p {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    width: auto;
+    height: 80%;
+  }
+  .m2_2 > p > span {
+    font-size: 1.2rem;
+  }
+  .titu {
+    display: none;
+  }
+  .price {
+    display: none;
+  }
+  .hijo2 {
+    width: 100vw;
+    height: 75vh;
+  }
+  .hijo2_1 {
+    width: 90vw;
+    height: 45vh;
+  }
+  h1 {
+    display: none;
+  }
+  .pe {
+    padding: 0.1rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  .tab-pane {
+    line-height: 1.1rem;
+    font-size: 0.85rem;
+    height: 30vh;
+  }
+  .blockquote {
+    line-height: 1.1rem;
+    font-size: 0.85rem;
+  }
+  .nav-item {
+    font-size: 0.7rem;
+  }
+  #compra {
+    margin-top: 1rem;
+  }
+}
